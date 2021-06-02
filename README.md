@@ -6,6 +6,8 @@
 또한, 자연스러운 답변을 유도하기 위해서 Scoring System을 개선하였고, 자동 응답을 출력하는 질문을 추가했습니다. <br><br>
 국민 시트콤의 국민 할아버지, 거침없이 하아킥의 이순재와 대화를 해보세요!😁
 
+[Demo](https://share.streamlit.io/sybock/chatbot_streamlit_v2/main/main.py)
+
 ### About
 - Trained using [kogpt2 v2](https://github.com/SKT-AI/KoGPT2) released by SKT
 - Training data: Sejong Spoken Corpus (8MB), [Conversation Data (1MB)](https://github.com/haven-jeon/KoGPT2-chatbot), Highkick Script (5MB)
