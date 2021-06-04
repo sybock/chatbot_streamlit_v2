@@ -138,12 +138,14 @@ class KoGPT2Chat():
         return best_output
 
     def fixed_messages(self, input_msg: str):
-        fixed_msg_list = ["이름이 뭐예요", "이름이 뭐예요?", "직업이 뭐예요", "직업이 뭐예요?"]
+        fixed_msg_list = ["이름이 뭐예요", "이름이 뭐예요?", "직업이 뭐예요", "직업이 뭐예요?", "몇 살이에요?"]
         output=[]
         if input_msg in fixed_msg_list:
             msg_id = fixed_msg_list.index(input_msg)
             if msg_id == 0 or msg_id == 1: output = random.choice(["이순재. 왜그래?", '이순재. 너 임마.'])
             if msg_id == 2 or msg_id == 3: output = random.choice(["이&박 여성전문 한방병원 원장이다 임마.", "한의사... 이 자식이... 왜 이래?"])
+            if msg_id == 4: output = random.choice(["야 임마... 넌 몇 살이야!?", "이 자식이... 왜 이래? 35년생이다 왜!"])
+
         return output
 
     def mychat(self):
