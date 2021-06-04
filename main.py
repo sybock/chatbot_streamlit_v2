@@ -208,7 +208,7 @@ def main():
         """
 
     display_app_header(main_txt,sub_txt,is_sidebar = False)
-    st.image("https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F253D2245586D1A7D0C", width=650)
+    st.image("https://i.ibb.co/8dxbtn5/sj-2.png", width=650)
     st.markdown(f"<div style='text-align: justify;'> {subtitle} </div>", unsafe_allow_html = True)
     display_side_panel_header("Resources")
     st.sidebar.markdown("""
