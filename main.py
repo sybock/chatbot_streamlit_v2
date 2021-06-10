@@ -121,7 +121,7 @@ class KoGPT2Chat():
     def reranking(self, output_text: list, last_response: str):
         last_tokens = self.tok.encode(last_response, return_tensors='pt')
         loss_list = []
-        kor_list = ["가", "요","이","에", "예", "네", "어", "세", " ", "셔", "셨", ".",",","?","!","야","죠","하", "고"]
+        kor_list = ["가", "요","이","에", "예", "네", "어", "세", " ", "셔", "셨", ".",",","?","!","야","죠","하", "고","뭐"]
         last_response_keywords = [c for c in last_response if c not in kor_list]
         for o in output_text:
             output_token = self.tok.encode(o.strip(), return_tensors='pt')
